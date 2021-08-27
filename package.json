@@ -4,7 +4,10 @@
   "description": "RSS aggregator",
   "main": "src/init.js",
   "scripts": {
-    "test": "jest --colors"
+    "test": "jest --colors",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
   },
   "repository": {
     "type": "git",
@@ -27,6 +30,7 @@
     "@babel/preset-env": "^7.15.0",
     "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^6.2.0",
     "debug": "^4.3.2",
     "eslint": "^7.32.0",
@@ -42,10 +46,18 @@
     "postcss-loader": "^6.1.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.3.2",
+    "sass": "^1.38.1",
+    "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.3",
+    "bootstrap": "^5.1.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
   }
 }
