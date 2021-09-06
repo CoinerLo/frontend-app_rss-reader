@@ -10,6 +10,8 @@ export default () => {
       error: null,
     },
     feeds: [],
+    posts: [],
+    viewedPosts: [],
   };
 
   const i18nInstance = i18n.createInstance();
