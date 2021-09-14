@@ -47,7 +47,6 @@ export default (state, i18n) => {
         break;
       case 'failing':
         activationForm(true);
-        // renderError(state.form.error);
         break;
       case 'success':
         activationForm(true);

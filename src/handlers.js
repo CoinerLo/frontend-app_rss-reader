@@ -1,6 +1,7 @@
-/* eslint-disable no-param-reassign */
+/* eslint no-param-reassign: ["error", { "props": false }] */
 import validateURL from './validator.js';
 import loadRSS from './downloader';
+import updateRSS from './updateLoader.js';
 
 export default (e, state) => {
   e.preventDefault();
@@ -8,7 +9,7 @@ export default (e, state) => {
   const url = formData.get('url').toString().trim();
   const error = validateURL(url, state.feeds);
   state.form.error = error;
-
+  const feedsCount = state.feeds.length;
   if (error) {
     state.form.process = 'failing';
   } else {
@@ -19,13 +20,17 @@ export default (e, state) => {
         state.feeds = [feedPars.feedInfo, ...state.feeds];
         state.posts = [...feedPars.posts, ...state.posts];
         state.form.process = 'success';
+        if (feedsCount === 0) {
+          updateRSS(state);
+        }
       })
       .catch((errorDownload) => {
+        console.log(errorDownload);
         state.form.process = 'failing';
         if (errorDownload.isAxiosError) {
-          state.form.error = 'errors.netError';
+          state.form.error = 'netError';
         } else {
-          state.form.error = 'errors.invalidRss';
+          state.form.error = 'invalidRss';
         }
       });
   }
