@@ -25,7 +25,6 @@ export default (e, state) => {
         }
       })
       .catch((errorDownload) => {
-        console.log(errorDownload);
         state.form.process = 'failing';
         if (errorDownload.isAxiosError) {
           state.form.error = 'netError';

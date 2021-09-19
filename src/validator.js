@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 
 export default (link, feeds) => {
-  const urls = feeds.map((url) => url);
+  const urls = feeds.map((feed) => feed.url);
 
   const schema = yup
     .string()
