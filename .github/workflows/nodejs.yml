@@ -15,20 +15,18 @@ jobs:
       matrix:
         node-version: [14.x, 15.x]
 
-      steps:
-        - uses: actions/checkout@v2
-        - name: Use Node.js ${{ matrix.node-version }}
-          uses: actions/setup-node@v2
-          with:
-            node-version: ${{ matrix.node-version }}
-
-        - name: npm install, build
-          run: |
-            make install
-            make build
-          env:
-            CI: true
-        
-        - name: Run Linter
-          run: |
-            make lint
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install, build
+        run: |
+          make install
+          make build
+        env:
+          CI: true
+      - name: Run Linter
+        run: |
+          make lint
