@@ -23,16 +23,12 @@ jobs:
             node-version: ${{ matrix.node-version }}
 
         - name: npm install, build
-            run: |
-              make install
-              make build
-            env:
-              CI: true
+          run: |
+            make install
+            make build
+          env:
+            CI: true
         
-        -name: Run Linter
-              run: |
-                make lint
-
-        -name: Deploy to Vercel
-              run: |
-                
+        - name: Run Linter
+          run: |
+            make lint
