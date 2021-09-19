@@ -19,7 +19,7 @@ const updateRSS = (state) => {
         }
       })
       .finally(() => {
-        setTimeout(() => updateRSS(state), 5000);
+        setTimeout(() => updateRSS(state), 10000); // update time
       });
   };
 
