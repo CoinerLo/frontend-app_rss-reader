@@ -5,7 +5,7 @@ export default (link, feeds) => {
 
   const schema = yup
     .string()
-    .required()
+    .required('errorEmptyField')
     .url('errorUrl')
     .notOneOf(urls, 'errorDouble');
 

@@ -2,6 +2,7 @@ export default {
   translation: {
     state: {
       form: {
+        errorEmptyField: 'Не должно быть пустым',
         errorUrl: 'Ссылка должна быть валидным URL',
         errorDouble: 'RSS уже существует',
         netError: 'Ошибка сети',

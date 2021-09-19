@@ -1,7 +1,7 @@
 /* eslint no-param-reassign: ["error", { "props": false }] */
 import validateURL from './validator.js';
 import loadRSS from './downloader';
-import updateRSS from './updateLoader.js';
+import updateRSS from './loadUpdater';
 
 export default (e, state) => {
   e.preventDefault();
