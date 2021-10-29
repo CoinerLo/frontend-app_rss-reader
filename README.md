@@ -1,10 +1,9 @@
-[![Actions Status](https://github.com/CoinerLo/frontend-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/CoinerLo/frontend-project-lvl3/actions)
-[![Node.js CI](https://github.com/CoinerLo/frontend-project-lvl3/actions/workflows/nodejs.yml/badge.svg)](https://github.com/CoinerLo/frontend-project-lvl3/actions/workflows/nodejs.yml)
-[![Maintainability](https://api.codeclimate.com/v1/badges/8ed17bfc5d6e0c57e6d5/maintainability)](https://codeclimate.com/github/CoinerLo/frontend-project-lvl3/maintainability)
+## [RSS Reader](https://frontend-project-lvl3-rho-tan.vercel.app/)
 
-## RSS Reader
+[![Actions Status](https://github.com/CoinerLo/frontend-app_rss-reader/workflows/hexlet-check/badge.svg)](https://github.com/CoinerLo/frontend-app_rss-reader/actions)
+[![Node.js CI](https://github.com/CoinerLo/frontend-app_rss-reader/actions/workflows/nodejs.yml/badge.svg)](https://github.com/CoinerLo/frontend-app_rss-reader/actions/workflows/nodejs.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8ed17bfc5d6e0c57e6d5/maintainability)](https://codeclimate.com/github/CoinerLo/frontend-app_rss-reader/maintainability)
 
-https://frontend-project-lvl3-rho-tan.vercel.app/
 
 Service for aggregating RSS feeds, with the help of which it is convenient to read various sources, for example, blogs. It allows you to add an unlimited number of RSS feeds, updates them and adds new entries to the general stream.
 

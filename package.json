@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CoinerLo/frontend-project-lvl3.git"
+    "url": "git+https://github.com/CoinerLo/frontend-app_rss-reader.git"
   },
   "author": "Igor' Lomakin <coiner4677@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CoinerLo/frontend-project-lvl3/issues"
+    "url": "https://github.com/CoinerLo/frontend-app_rss-reader/issues"
   },
-  "homepage": "https://github.com/CoinerLo/frontend-project-lvl3#readme",
+  "homepage": "https://github.com/CoinerLo/frontend-app_rss-reader#readme",
   "jest": {
     "verbose": true,
     "testURL": "http://localhost/",
